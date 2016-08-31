@@ -1,14 +1,17 @@
 defmodule ExAircallTest do
+
   use ExUnit.Case
   doctest ExAircall
 
-  test "retreive a pong" do
-    %{body: body} = ExAircall.API.ping
-    assert body == "{\"ping\":\"pong\"}"
+  @doc """
+
+  """
+  test "returns a pong" do
+    assert ExAircall.ping == "pong"
   end
 
-  test "returns call object" do
-    %{status_code: status} = ExAircall.API.call
-    assert status == 200
+  test "returns a list of calls" do
+    [map] = ExAircall.call
+    assert is_map(map)
   end
 end

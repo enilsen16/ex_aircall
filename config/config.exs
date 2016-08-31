@@ -14,7 +14,9 @@ use Mix.Config
     app_id: System.get_env("AIRCALL_APP_ID"),
     api_token: System.get_env("AIRCALL_API_TOKEN")
 
-config :ex_doc, :markdown_processor, ExDoc.Markdown.Pandoc
+if Mix.env == :dev do
+  config :ex_doc, :markdown_processor, ExDoc.Markdown.Pandoc
+end
 #
 # And access this configuration in your application as:
 #
