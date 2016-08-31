@@ -57,7 +57,6 @@ defmodule ExAircall.Mixfile do
   defp package do
     [
       files: ["lib", "mix.exs", "README*"],
-      name: :ex_sonar,
       maintainers: ["Erik Nilsen"],
       licenses: ["MIT"],
       links: %{
