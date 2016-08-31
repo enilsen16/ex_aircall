@@ -20,3 +20,9 @@
       [applications: [:ex_aircall]]
     end
     ```
+
+## Contributing
+
+Please feel free to add more API endpoints or Webhook support.
+
+At the time of writing this only the `ping` and `calls` API endpoints are supported.
