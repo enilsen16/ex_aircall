@@ -3,6 +3,12 @@ defmodule ExAircallTest do
   doctest ExAircall
 
   test "retreive a pong" do
-    assert ExAircall.API.ping == "{\"ping\":\"pong\"}"
+    %{body: body} = ExAircall.API.ping
+    assert body == "{\"ping\":\"pong\"}"
+  end
+
+  test "returns call object" do
+    %{status_code: status} = ExAircall.API.call
+    assert status == 200
   end
 end

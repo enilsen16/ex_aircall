@@ -6,7 +6,11 @@ defmodule ExAircall.API do
 
   def ping do
     url = "https://#{@app_id}:#{@api_token}@#{@base_url}/ping"
-    %{body: body} = HTTPoison.get! url
-    body
+    HTTPoison.get! url
+  end
+
+  def call do
+    url = "https://#{@app_id}:#{@api_token}@#{@base_url}/calls"
+    HTTPoison.get! url
   end
 end
