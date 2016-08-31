@@ -3,9 +3,6 @@ defmodule ExAircallTest do
   use ExUnit.Case
   doctest ExAircall
 
-  @doc """
-
-  """
   test "returns a pong" do
     assert ExAircall.ping == "pong"
   end
