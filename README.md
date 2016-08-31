@@ -1,4 +1,5 @@
-# ExAircall [![Build Status](https://travis-ci.org/HiOperator/ex_aircall.svg?branch=master)](https://travis-ci.org/HiOperator/ex_aircall)
+# ExAircall
+[![Build Status](https://travis-ci.org/HiOperator/ex_aircall.svg?branch=master)](https://travis-ci.org/HiOperator/ex_aircall)
 
 [Aircall documentation](http://developer.aircall.io/)
 

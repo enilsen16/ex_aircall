@@ -13,6 +13,8 @@ use Mix.Config
   config :ex_aircall,
     app_id: System.get_env("AIRCALL_APP_ID"),
     api_token: System.get_env("AIRCALL_API_TOKEN")
+
+config :ex_doc, :markdown_processor, ExDoc.Markdown.Pandoc
 #
 # And access this configuration in your application as:
 #
