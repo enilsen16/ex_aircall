@@ -2,7 +2,7 @@ defmodule ExAircallTest do
   use ExUnit.Case
   doctest ExAircall
 
-  test "the truth" do
-    assert 1 + 1 == 2
+  test "retreive a pong" do
+    assert ExAircall.API.ping == "{\"ping\":\"pong\"}"
   end
 end

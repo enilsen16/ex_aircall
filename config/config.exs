@@ -10,7 +10,9 @@ use Mix.Config
 
 # You can configure for your application as:
 #
-#     config :ex_aircall, key: :value
+  config :ex_aircall,
+    app_id: System.get_env("AIRCALL_APP_ID"),
+    api_token: System.get_env("AIRCALL_API_TOKEN")
 #
 # And access this configuration in your application as:
 #
