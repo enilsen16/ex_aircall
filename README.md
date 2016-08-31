@@ -1,8 +1,8 @@
 # ExAircall [![Build Status](https://travis-ci.org/HiOperator/ex_aircall.svg?branch=master)](https://travis-ci.org/HiOperator/ex_aircall)
 
-## Installation
+[Aircall documentation](http://developer.aircall.io/)
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+## Installation
 
   1. Add `ex_aircall` to your list of dependencies in `mix.exs`:
 

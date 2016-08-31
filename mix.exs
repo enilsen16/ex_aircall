@@ -5,6 +5,9 @@ defmodule ExAircall.Mixfile do
     [app: :ex_aircall,
      version: "0.1.0",
      elixir: "~> 1.3",
+     docs: docs(),
+     description: description(),
+     package: package(),
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps()]
@@ -29,6 +32,36 @@ defmodule ExAircall.Mixfile do
   defp deps do
     [
       {:httpoison, "~> 0.9.0"}
+    ]
+  end
+
+  defp docs do
+    [
+      extras: docs_extras(),
+      main: "readme"
+    ]
+  end
+
+  defp docs_extras do
+    ["README.md"]
+  end
+
+  defp description do
+    """
+    An @aircall API interface for Elixir
+    """
+  end
+
+  defp package do
+    [
+      files: ["lib", "mix.exs", "README*"],
+      name: :ex_sonar,
+      maintainers: ["Erik Nilsen"],
+      licenses: ["MIT"],
+      links: %{
+        "GitHub" => "https://github.com/HiOperator/ex_aircall",
+        "Docs" => "https://hexdocs.pm/ex_aircall"
+      }
     ]
   end
 end
