@@ -1,6 +1,4 @@
-# ExAircall
-
-**TODO: Add description**
+# ExAircall [![Build Status](https://travis-ci.org/HiOperator/ex_aircall.svg?branch=master)](https://travis-ci.org/HiOperator/ex_aircall)
 
 ## Installation
 
@@ -21,7 +19,3 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
       [applications: [:ex_aircall]]
     end
     ```
-
-If [published on HexDocs](https://hex.pm/docs/tasks#hex_docs), the docs can
-be found at [https://hexdocs.pm/ex_aircall](https://hexdocs.pm/ex_aircall)
-
