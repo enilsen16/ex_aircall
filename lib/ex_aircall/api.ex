@@ -2,7 +2,7 @@ defmodule ExAircall.API do
   @moduledoc """
     API Endpoint wrapper
   """
-  
+
   @base_url "api.aircall.io/v1"
   @api_token Application.get_env(:ex_aircall, :api_token)
   @app_id Application.get_env(:ex_aircall, :app_id)
@@ -18,7 +18,7 @@ defmodule ExAircall.API do
   @doc """
   Calls endpoint. Returns struct similar to http://developer.aircall.io/#call
   """
-  def call do
+  def calls do
     url = "https://#{@app_id}:#{@api_token}@#{@base_url}/calls"
     HTTPoison.get! url
   end

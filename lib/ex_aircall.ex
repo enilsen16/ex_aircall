@@ -25,8 +25,8 @@ defmodule ExAircall do
   @doc """
     Returns only the parsed body.
   """
-  def call do
-    %{body: body} = API.call
+  def calls do
+    %{body: body} = API.calls
 
     body
     |> Poison.decode!

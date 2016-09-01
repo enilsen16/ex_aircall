@@ -8,7 +8,7 @@ defmodule ExAircallTest do
   end
 
   test "returns a list of calls" do
-    [map] = ExAircall.call
-    assert is_map(map)
+    list = ExAircall.calls
+    assert is_list(list)
   end
 end
