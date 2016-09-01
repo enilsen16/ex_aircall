@@ -17,9 +17,10 @@ defmodule ExAircall.API do
 
   @doc """
   Calls endpoint. Returns struct similar to http://developer.aircall.io/#call
+  To include options, pass then as one string
   """
-  def calls do
-    url = "https://#{@app_id}:#{@api_token}@#{@base_url}/calls"
+  def calls(opts \\ "") do
+    url = "https://#{@app_id}:#{@api_token}@#{@base_url}/calls?per_page=50#{opts}"
     HTTPoison.get! url
   end
 end

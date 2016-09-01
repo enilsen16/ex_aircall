@@ -8,7 +8,7 @@ defmodule ExAircall.APITest do
   end
 
   test "returns call object" do
-    %{status_code: status} = ExAircall.API.calls
+    %{status_code: status} = ExAircall.API.calls()
     assert status == 200
   end
 end

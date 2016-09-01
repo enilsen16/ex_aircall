@@ -25,11 +25,10 @@ defmodule ExAircall do
   @doc """
     Returns only the parsed body.
   """
-  def calls do
-    %{body: body} = API.calls
+  def calls(opts \\ "") do
+    %{body: body} = API.calls(opts)
 
     body
     |> Poison.decode!
-    |> Map.get("calls")
   end
 end
