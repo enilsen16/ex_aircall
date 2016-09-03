@@ -20,7 +20,7 @@ defmodule ExAircall.API do
   To include options, pass then as one string
   """
   def calls(opts \\ "") do
-    url = "https://#{@app_id}:#{@api_token}@#{@base_url}/calls?per_page=50#{opts}"
+    url = "https://#{@app_id}:#{@api_token}@#{@base_url}/calls?#{opts}"
     HTTPoison.get! url
   end
 end
