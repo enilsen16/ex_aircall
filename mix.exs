@@ -3,7 +3,7 @@ defmodule ExAircall.Mixfile do
 
   def project do
     [app: :ex_aircall,
-     version: "0.3.1",
+     version: "0.3.2",
      elixir: "~> 1.3",
      docs: docs(),
      description: description(),
