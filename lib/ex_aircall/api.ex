@@ -12,6 +12,7 @@ defmodule ExAircall.API do
   """
   def ping do
     url = "https://#{@app_id}:#{@api_token}@#{@base_url}/ping"
+    IO.inspect url
     HTTPoison.get! url
   end
 
