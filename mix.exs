@@ -3,7 +3,7 @@ defmodule ExAircall.Mixfile do
 
   def project do
     [app: :ex_aircall,
-     version: "0.3.2",
+     version: "0.3.3",
      elixir: "~> 1.3",
      docs: docs(),
      description: description(),
@@ -33,7 +33,7 @@ defmodule ExAircall.Mixfile do
     [
       {:ex_doc, "~> 0.11", only: :dev},
       {:httpoison, "~> 0.9.0"},
-      {:poison, "~> 2.0"}
+      {:poison, "~> 3.0"}
     ]
   end
 
